@@ -1,11 +1,11 @@
-import Sidebar from "../components/sidebar";
+import SideBar from "../components/sidebar";
 import TopNav from "../components/TopNav";
 import Home from "../pages/Home";
 
 function Dashboard() {
     return (
         <div>
-            {/* <Sidebar />
+            {/* <SideBar />
             <TopNav /> */}
             <Home />
 
