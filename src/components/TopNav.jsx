@@ -1,7 +1,7 @@
 function TopNav() {
     return (
         <nav className="sticky top-0 bg-white border-b border-gray-200 p-4 z-10">
-            <div className="flex justify-between items-center max-w-2xl mx-auto">
+            <div className="flex justify-between items-center max-w-5xl mx-auto">
                 <h2 className="text-xl font-bold">Home</h2>
 
                 <div className="flex items-center gap-4">

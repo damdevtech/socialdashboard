@@ -1,17 +1,46 @@
 function Sidebar() {
     return (
-        <div className="sidebar">
-            <h2>Sidebar</h2>
-            <ul>
-                <li><a href="/"><i className="fas fa-home" style={{ marginRight: '8px' }}></i>Home</a></li>
-                <li><a href="/explore"><i className="fas fa-compass" style={{ marginRight: '8px' }}></i>Explore</a></li>
-                <li><a href="/messages"><i className="fas fa-envelope" style={{ marginRight: '8px' }}></i>Messages</a></li>
-                <li><a href="/profile"><i className="fas fa-user" style={{ marginRight: '8px' }}></i>Profile</a></li>
-            </ul>
-            <button>New Post</button>
-        </div>
+        <>
+            {/* Desktop Sidebar */}
+            <div className="hidden md:flex flex-col w-64 p-4">
 
-    )
+                <h2 className="text-xl font-bold mb-6">Menu</h2>
+
+                <ul className="space-y-4 text-gray-700">
+                    <li className="flex items-center gap-2 hover:text-blue-500 cursor-pointer">
+                        🏠 Home
+                    </li>
+
+                    <li className="flex items-center gap-2 hover:text-blue-500 cursor-pointer">
+                        🔍 Explore
+                    </li>
+
+                    <li className="flex items-center gap-2 hover:text-blue-500 cursor-pointer">
+                        ✉️ Messages
+                    </li>
+
+                    <li className="flex items-center gap-2 hover:text-blue-500 cursor-pointer">
+                        👤 Profile
+                    </li>
+                </ul>
+
+                <button className="mt-6 bg-blue-500 text-white px-4 py-2 rounded-full">
+                    New Post
+                </button>
+
+            </div>
+
+            {/* Mobile Bottom Navigation */}
+            <div className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t flex justify-around py-3 text-xl">
+
+                <button>🏠</button>
+                <button>🔍</button>
+                <button>✉️</button>
+                <button>👤</button>
+
+            </div>
+        </>
+    );
 }
 
-export default Sidebar; 
+export default Sidebar;
